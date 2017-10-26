@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p id="a"> </p>
+
+
+<br><br><br><br>
+
+<input  id="b" value="20">
+<br><br><br>
+<button onclick="me()">Tryit</button>
+<p id="D"> </p>
+
+<script>
+
+var A = 4;
+var B = 6;
+var C = A<B?B:A;
+document.getElementById("a").innerHTML = C ;
+
+function me() {
+    var A, B;
+    A = document.getElementById("b").value;
+    B = (A > 15) ? "young" : "child";
+    document.getElementById("D").innerHTML = B;
+}
+</script>
+
+
+</body>
+</html>

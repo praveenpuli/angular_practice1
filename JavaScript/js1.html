@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+
+<button onclick="me()">Try it</button>
+
+<p id="you"> </p>
+
+<script>
+
+
+function me(){
+    var A ;
+    if (confirm("do you want to save ?") == true ){
+        A = "it saved ...!";
+    }else{
+        A = "it canceled...!";
+    }
+    document.getElementById("you").innerHTML = A ;
+}
+
+</script>
+
+</body>
+</html>
